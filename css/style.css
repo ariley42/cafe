@@ -1,0 +1,11 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+.navbar-nav {
+    letter-spacing: 1px;
+}
