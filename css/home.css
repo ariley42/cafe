@@ -1,0 +1,39 @@
+body {
+    margin: 20px;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #f0f0f0;
+    color: #3a403b;
+    
+}
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+.navbar-nav {
+    letter-spacing: 1px;
+}
+
+.container {
+    padding: 50px;
+    background-color: #fef854;
+}
+h1, h3 {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 100%;
+    grid-column: 1 / -1;
+    letter-spacing: 3px;
+  }
+
+p {
+    display: flex;
+    margin: 0 0 1em 0;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    background-color: #cc2f2a;
+}
