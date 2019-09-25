@@ -1,8 +1,8 @@
 body {
     margin: 20px;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #f0f0f0;
-    color: #3a403b;
+    color: #000;
     
 }
 .navbar-brand {
@@ -14,18 +14,18 @@ body {
     letter-spacing: 1px;
 }
 
+#nav-img {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
 .container {
     padding: 50px;
     background-color: #fef854;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 120;
-    word-spacing: 5px;
-}
-h1, h3 {
+h2, p {
     display: flex;
     justify-content: center;
     flex: 0 1 100%;
@@ -39,11 +39,38 @@ p {
     justify-content: center;
 }
 
-.btn {
+.button {
+    position: absolute;
+    right: 35px;
     background-color: #cc2f2a;
+    border-radius: 16px;
 }
 .card {
     margin-left: auto;
     margin-right: auto;
     background-color: #f0f0f0;
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 77.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    background-color: transparent;
+    border-color: black;
+
+    padding: .5px;
+    border-radius: 6px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #cc2f2a;
 }
