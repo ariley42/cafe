@@ -24,13 +24,13 @@ ul[role="menubar"] [role="menuitem"]:focus,
 ul[role="menubar"] [role="menuitem"]:hover,
 ul[role="menubar"] [role="separator"]:focus,
 ul[role="menubar"] [role="separator"]:hover {
-  background-color: #000;
+  background-color: black;
   color: white;
 }
 
 ul[role="menubar"] a[role="menuitem"] {
   text-decoration: none;
-  color: #000;
+  color: black;
 }
 
 ul[role="menubar"] li {
