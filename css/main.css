@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    letter-spacing: 1px;
+}
+
+#nav-img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.row {
+    padding: 50px;
+    letter-spacing: 1px;
+}
+
+/*Floating Back-To-Top Button*/
+#myBtn {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 18.5%;
+    left: 77.25%;
+    max-width: 30px;
+    width: 100%;
+    font-size: 12px;
+    background-color: transparent;
+    border-color: black;
+
+    padding: .5px;
+    border-radius: 6px;
+
+}
+/*On Hover Color Change*/
+#myBtn:hover {
+    background-color: #cc2f2a;
+}

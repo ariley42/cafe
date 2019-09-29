@@ -1,69 +1,109 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Our style sheet -->
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="menubarLinks.css">
-    <body>
-  <nav aria-label="Mythical University">
-  <ul id="menubar1"
-      role="menubar"
-      aria-label="Mythical University">
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="about.html"
-         tabindex="0">
-        About
-      </a>
-    </li>
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="#"
-         tabindex="-1">
-        Wine Shoppe
-      </a>
-      </li>
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="menus.html"
-         tabindex="-2">
-        Menus
-      </a>
-      
-    </li>
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="events.html"
-         tabindex="-3">
-        Events
-      </a>
-      
-    </li>
-    </ul>
-    
-</nav>
-<script type="text/javascript">
-  var menubar = new Menubar(document.getElementById('menubar1'));
-  menubar.init();
-</script>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12 col-md-8">
-                <h2>Welcome to Cafe Presse</h2>
+
+
+    <title>Cafe Presse</title>
+</head>
+
+<body>
+    <nav aria-label="Mythical University" class='fixed-top'>
+        <ul id="menubar1" role="menubar" aria-label="Mythical University">
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#" tabindex="0">
+                    Home
+                </a>
+            </li>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./about.html" tabindex="1">
+                    About
+                </a>
+            </li>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./contact.html" tabindex="-2">
+                    Contact
+                </a>
+            </li>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./menus.html" tabindex="-3">
+                    Menus
+                </a>
+
+            </li>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./events.html" tabindex="-4">
+                    Events
+                </a>
+            </li>
+            <a class='mr-auto' id='nav-img' href='#'><img src='./imgs/Cafe-Presse-logo.png' height='50' width='50'></a>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Heading Row -->
+        <div class="row align-items-center my-3">
+            <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo-2-transparent.png" alt="">
+            </div>
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-5">
+                <h2 class="font-weight-light">&nbsp French<br>Bar & Cafe<br><br></h2>
+                <p>OPEN DAILY <br> 8AM TO 1AM <br><br></p>
+            </div>
+            <!-- /.col-md-4 -->
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row cards">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Reservations</h2>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Soccer</h2>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-md-4 -->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">Take Home Food & Wine</h2>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary btn-sm">More Info</a>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        
     </div>
     <footer class="footer">
         <div class="container">
@@ -73,8 +113,9 @@
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Employment</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Menus</a></li>
+                        <li><a href="#">Events</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
@@ -83,7 +124,6 @@
                         1117 12th Ave<br>
                         Seattle, WA 98122<br>
                         Tel.: +12067097674<br>
-                        Fax: +00000000000<br>
                         Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
                     </address>
                 </div>
@@ -103,6 +143,11 @@
                     <p>© Copyright 2019 Hannah + Arianna</p>
                 </div>
             </div>
+
+            <!-- floating back-to-top button -->
+            <button id="myBtn"><a href="#top"><img src='./imgs/Arrow_Pointing_Up.png' height='40' width='35'
+                        alt='arrow-pointing-up'></a></button>
+
         </div>
     </footer>
     <script src="./app.js"></script>
@@ -110,5 +155,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    </body>
+</body>
+
 </html>
