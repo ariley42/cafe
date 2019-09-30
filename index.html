@@ -8,46 +8,51 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Our style sheet -->
 
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="menubarLinks.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 
 
     <title>Cafe Presse</title>
 </head>
 
 <body>
-    <nav aria-label="Mythical University" class='fixed-top'>
+
+    <!-- let's add a fixed-top/sticky nav to the menubar -->
+    <nav aria-label="Mythical University">
         <ul id="menubar1" role="menubar" aria-label="Mythical University">
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="#" tabindex="0">
-                    Home
-                </a>
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./about.html" tabindex="1">
+                <!-- we need to add a "home" spot -->
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="about.html" tabindex="0">
                     About
                 </a>
             </li>
+
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./contact.html" tabindex="-2">
-                    Contact
-                </a>
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./menus.html" tabindex="-3">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="menus.html" tabindex="-1">
                     Menus
                 </a>
 
             </li>
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./events.html" tabindex="-4">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="events.html" tabindex="-2">
                     Events
                 </a>
+
             </li>
-            <a class='mr-auto' id='nav-img' href='#'><img src='./imgs/Cafe-Presse-logo.png' height='50' width='50'></a>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="contact.html" tabindex="-3">
+                    Contact
+                </a>
+                <!-- would like to add the logo to the menubar -->
+                <!-- <a class='mr-auto' id='nav-img' href='./index.html'><img src='./imgs/Cafe-Presse-logo.png' height='50'
+                            width='50'></a> -->
+            </li>
         </ul>
+
     </nav>
+    <script type="text/javascript">
+        var menubar = new Menubar(document.getElementById('menubar1'));
+        menubar.init();
+    </script>
 
     <!-- Page Content -->
     <div class="container">
@@ -72,8 +77,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 class="card-title">Reservations</h2>
-                        <p class="card-text">Call 206.709.7674 for reservations 5pm-close seven days a week and brunch
-                            on weekends.</p>
+                        <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary btn-sm">More Info</a>
@@ -85,9 +89,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 class="card-title">Soccer</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex
-                            natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore
-                            voluptates quos eligendi labore.</p>
+                        <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary btn-sm">More Info</a>
@@ -99,17 +101,22 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 class="card-title">Take Home Food & Wine</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex
-                            natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore
-                            voluptates quos eligendi labore.</p>
+                        <p class="card-text"></p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary btn-sm">More Info</a>
                     </div>
                 </div>
             </div>
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-5">
+                <h2 class="font-weight-light">&nbsp French<br>Bar & Cafe<br><br></h2>
+                <p>OPEN DAILY <br> 8AM TO 1AM <br><br></p>
+            </div>
+            <!-- /.col-md-4 -->
         </div>
     </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -149,13 +156,10 @@
                 </div>
             </div>
 
-            <!-- floating back-to-top button -->
-            <button id="myBtn"><a href="#top"><img src='./imgs/Arrow_Pointing_Up.png' height='40' width='35'
-                        alt='arrow-pointing-up'></a></button>
-
         </div>
+
     </footer>
-    <script src="./app.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
