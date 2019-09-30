@@ -1,3 +1,7 @@
+/*This css cannot be modified. anything related to the navbar cannot be modified at risk of breaking navbar.*/
+
+
+
 ul[role="menubar"] {
   margin: 10px;
   padding: 10px;
@@ -67,3 +71,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
   content: url('../images/right-arrow-brown.png');
   padding-right: 2em;
 }
+
+
+
+/*Start your custom css here- you can target elements on each page individually by assigning your own ID*/
