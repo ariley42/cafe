@@ -15,37 +15,44 @@
 </head>
 
 <body>
-    <nav aria-label="Mythical University" class='fixed-top'>
+
+    <!-- let's add a fixed-top/sticky nav to the menubar -->
+    <nav aria-label="Mythical University">
         <ul id="menubar1" role="menubar" aria-label="Mythical University">
             <li role="none">
-                <a role="menuitem active" aria-haspopup="true" aria-expanded="false" href="#" tabindex="0">
-                    Home
-                </a>
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./about.html" tabindex="1">
+                <!-- we need to add a "home" spot -->
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="about.html" tabindex="0">
                     About
                 </a>
             </li>
+
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./contact.html" tabindex="-2">
-                    Contact
-                </a>
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./menus.html" tabindex="-3">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="menus.html" tabindex="-1">
                     Menus
                 </a>
 
             </li>
             <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="./events.html" tabindex="-4">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="events.html" tabindex="-2">
                     Events
                 </a>
+
             </li>
-            <a class='mr-auto' id='nav-img' href='#'><img src='./imgs/Cafe-Presse-logo.png' height='50' width='50'></a>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="contact.html" tabindex="-3">
+                    Contact
+                </a>
+                <!-- would like to add the logo to the menubar -->
+                <!-- <a class='mr-auto' id='nav-img' href='./index.html'><img src='./imgs/Cafe-Presse-logo.png' height='50'
+                            width='50'></a> -->
+            </li>
         </ul>
+
     </nav>
+    <script type="text/javascript">
+        var menubar = new Menubar(document.getElementById('menubar1'));
+        menubar.init();
+    </script>
 
     <!-- Page Content -->
     <div class="container">
@@ -101,6 +108,12 @@
                     </div>
                 </div>
             </div>
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-5">
+                <h2 class="font-weight-light">&nbsp French<br>Bar & Cafe<br><br></h2>
+                <p>OPEN DAILY <br> 8AM TO 1AM <br><br></p>
+            </div>
+            <!-- /.col-md-4 -->
         </div>
     </div>
 
@@ -144,6 +157,7 @@
             </div>
 
         </div>
+
     </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
