@@ -1,0 +1,156 @@
+
+body {
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+/*This css cannot be modified. anything related to the navbar cannot be modified at risk of breaking navbar.*/
+
+ul[role="menubar"] {
+  margin: 10px;
+  padding: 10px;
+  font-size: 110%;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul[role="menubar"] [role="menuitem"],
+ul[role="menubar"] [role="separator"] {
+  padding: 0.25em;
+  background-color: #eee;
+  border: 2px solid #eee;
+}
+
+ul[role="menubar"] [role="separator"] {
+  padding-top: 0.15em;
+  background-position: center;
+  background-repeat: repeat-x;
+}
+
+ul[role="menubar"] [role="menuitem"]:focus,
+ul[role="menubar"] [role="menuitem"]:hover,
+ul[role="menubar"] [role="separator"]:focus,
+ul[role="menubar"] [role="separator"]:hover {
+  background-color: black;
+  color: white;
+}
+
+ul[role="menubar"] a[role="menuitem"] {
+  text-decoration: none;
+  color: black;
+}
+
+ul[role="menubar"] li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="menubar"] > li {
+  display: inline;
+  position: relative;
+}
+
+ul[role="menubar"] > li > a::after {
+  padding-left: 0.25em;
+}
+
+ul[role="menubar"] ul[role="menu"] {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="menubar"] ul[role="menu"] li a {
+  display: block;
+  width: 10em;
+}
+
+ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
+  padding-right: 2em;
+}
+
+/* I would like to add this in to bold the menu item of the page you're currently on, let me know if that's doable
+a[role="menuitem active"] {
+  color: #000;
+  font-weight: 700;
+} */
+
+/*Start your custom css here- you can target elements on each page individually by assigning your own ID*/
+
+/* home, about specific css */
+
+  .row {
+    padding: 30px;
+    letter-spacing: 1px;
+}
+
+.container {
+    padding: 50px;
+    background-color: #fef854;
+}
+
+h2, p {
+    display: flex;
+    justify-content: center;
+    flex: 0 1 100%;
+    grid-column: 1 / -1;
+    letter-spacing: 1px;
+  }
+
+p {
+    display: flex;
+    margin: 0 0 1em 0;
+    justify-content: center;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0;
+}
+
+/* about css */
+#about {
+  padding-top: 40px;
+}
+
+/* menu css*/
+.btn-menu {
+  border-color: #000;
+  color: #000;
+  font-weight: bold;
+}
+.btn-menu:hover {
+  opacity: 5.0;
+}
+.dropdown-item:hover {
+background-color: #cc2f2a;
+color: #fff;
+}
+button:not(.btn) {
+  text-decoration: underline;
+}
+.menu-border {
+  border-top: 2px solid #000;
+  margin-top: 50px;
+  padding: 40px;
+  border-collapse: separate;
+  border-spacing: 20px 40px;
+}
+h6 {
+  font-weight: bolder;
+}
+.title-border {
+  border: 5px double #cc2f2a;
+  margin-right: 170px;
+  margin-left: 170px;
+  margin-bottom: 70px;
+  padding: 20px;
+}
+

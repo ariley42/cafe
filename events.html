@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Our style sheet -->
-    <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="stylesheet" href="src/css/styles.css">
+<link href="https://unpkg.com/fullcalendar@3.10.1/dist/fullcalendar.min.css" rel="stylesheet" />
+<link href="https://unpkg.com/fullcalendar-scheduler@1.10.0/dist/scheduler.min.css" rel="stylesheet" />
+<script src="https://unpkg.com/moment@2.24.0/min/moment.min.js"></script>
+<script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/fullcalendar@3.10.1/dist/fullcalendar.min.js"></script>
+<script src="https://unpkg.com/fullcalendar-scheduler@1.10.0/dist/scheduler.min.js"></script>
 
     <title>Cafe Presse</title>
 
@@ -39,6 +44,7 @@
       </a>
       
     </li>
+    
     <li role="none">
       <a role="menuitem"
          aria-haspopup="true"
@@ -62,19 +68,19 @@
     </ul>
     
 </nav>
-<script type="text/javascript">
-  var menubar = new Menubar(document.getElementById('menubar1'));
-  menubar.init();
-</script>
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-8">
                 <h2>Welcome to Cafe Presse</h2>
             </div>
         </div>
-
+        <div id='calendar'>
+            
+        </div>
 
     </div>
+    <script src="dist/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
