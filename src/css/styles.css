@@ -1,3 +1,4 @@
+
 body {
     margin: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -24,7 +25,6 @@ ul[role="menubar"] [role="separator"] {
 
 ul[role="menubar"] [role="separator"] {
   padding-top: 0.15em;
-  background-image: url('../images/separator.png');
   background-position: center;
   background-repeat: repeat-x;
 }
@@ -54,7 +54,6 @@ ul[role="menubar"] > li {
 }
 
 ul[role="menubar"] > li > a::after {
-  content: url('../images/down-arrow-brown.png');
   padding-left: 0.25em;
 }
 
@@ -73,7 +72,6 @@ ul[role="menubar"] ul[role="menu"] li a {
 }
 
 ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
-  content: url('../images/right-arrow-brown.png');
   padding-right: 2em;
 }
 
@@ -126,7 +124,7 @@ p {
 .btn-menu {
   border-color: #000;
   color: #000;
-  font-weight: bold; 
+  font-weight: bold;
 }
 .btn-menu:hover {
   opacity: 5.0;
