@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- css for animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Our style sheet -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -15,58 +17,44 @@
 </head>
 
 <body>
-        <nav aria-label="Mythical University">
-  <ul id="menubar1"
-      role="menubar"
-      aria-label="Mythical University">
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="about.html"
-         tabindex="0">
-        About
-      </a>
-    </li>
-   
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="menus.html"
-         tabindex="-1">
-        Menus
-      </a>
-      
-    </li>
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="events.html"
-         tabindex="-2">
-        Events
-      </a>
-      
-    </li>
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="contact.html"
-         tabindex="-3">
-        Contact
-      </a>
-      
-    </li>
-    </ul>
-    
-</nav>
-<script type="text/javascript">
-  var menubar = new Menubar(document.getElementById('menubar1'));
-  menubar.init();
-</script>
-    <div class="container-fluid">
+    <nav aria-label="Mythical University">
+        <ul id="menubar1" role="menubar" aria-label="Mythical University">
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="about.html" tabindex="0">
+                    About
+                </a>
+            </li>
+
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="menus.html" tabindex="-1">
+                    Menus
+                </a>
+
+            </li>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="events.html" tabindex="-2">
+                    Events
+                </a>
+
+            </li>
+            <li role="none">
+                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="contact.html" tabindex="-3">
+                    Contact
+                </a>
+
+            </li>
+        </ul>
+
+    </nav>
+
+    <script type="text/javascript">
+        var menubar = new Menubar(document.getElementById('menubar1'));
+        menubar.init();
+    </script>
+
+    <!-- Page Content -->
+    <div class='container'>
+
         <!-- Heading Row -->
         <div class="row my-3 animated fadeIn slower">
             <!-- /.col-lg-8 -->
@@ -82,7 +70,7 @@
                     <button class="btn btn-menu btn-md mb-5 animated pulse" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Go To
                         Menus
-                        &nbsp; &nbsp; &nbsp;<img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/dropdown-icon.jpg"
+                        &nbsp; &nbsp; &nbsp;<img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/dropdown-icon.jpg"
                             height="20" width="20" alt="down arrow">
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -96,7 +84,7 @@
                 </div>
             </div>
             <div class="col-lg-5">
-                <img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo-2-transparent.png"
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo-2-transparent.png"
                     alt="cafepresse-logo-2">
             </div>
         </div>
@@ -112,7 +100,7 @@
                                 Le Menu</h1>
                             <p class="lead">8am to 11pm</p>
                         </div>
-                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
+                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo.png"
                                     alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div class="col-12 mt-2">
@@ -270,7 +258,7 @@
                                 Mardi Prix Fixe</h1>
                             <p class="lead">Every Tuesday from 11am to 10pm</p>
                         </div>
-                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
+                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo.png"
                                     alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
@@ -360,7 +348,7 @@
                                 Vin Express</h1>
                             <p class="lead">Available 4pm to 6pm Daily</p>
                         </div>
-                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
+                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo.png"
                                     alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
@@ -416,7 +404,7 @@
                                 Menu Noctambule</h1>
                             <p class="lead">11pm to 1am Nightly</p>
                         </div>
-                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
+                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo.png"
                                     alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
@@ -554,7 +542,7 @@
                                 Desserts</h1>
                             <p class="lead">All our desserts are made in-house</p>
                         </div>
-                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
+                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo.png"
                                     alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div class="col-12 mt-2">
@@ -679,7 +667,7 @@
                                 Poulets rôti à emporter</h1>
                             <p class="lead">Available for Take-Out</p>
                         </div>
-                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
+                        <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/Cafe-Presse-logo.png"
                                     alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
@@ -724,22 +712,11 @@
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
-</body>
-<footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 offset-1 col-sm-2">
-                    <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
@@ -754,17 +731,14 @@
                         1117 12th Ave<br>
                         Seattle, WA 98122<br>
                         Tel.: +12067097674<br>
-                        Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                        Email: <a href="mailto:info@cafepresse.com">info@cafepresse.com</a>
                     </address>
                 </div>
                 <div class="col-12 col-sm-4 align-self-center">
                     <div class="text-center">
-                        <a href="http://google.com/+">Google+</a>
-                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
-                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
-                        <a href="http://twitter.com/">Twitter</a>
-                        <a href="http://youtube.com/">YouTube</a>
-                        <a href="mailto:">Mail</a>
+                        <a href="https://www.facebook.com/Caf%C3%A9-Presse-116501908374109/">Facebook &nbsp;</a>
+                        <a href="https://twitter.com/cafepressewa?lang=en">Twitter &nbsp;</a>
+                        <a href="mailto:">Mail &nbsp;</a>
                     </div>
                 </div>
             </div>
@@ -775,5 +749,21 @@
             </div>
         </div>
     </footer>
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
 
 </html>

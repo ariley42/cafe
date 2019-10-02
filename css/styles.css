@@ -102,7 +102,7 @@ h2, p {
     justify-content: center;
     flex: 0 1 100%;
     grid-column: 1 / -1;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
   }
 
 p {
@@ -111,12 +111,6 @@ p {
     justify-content: center;
 }
 
-.button {
-    position: absolute;
-    right: 35px;
-    background-color: #cc2f2a;
-    border-radius: 16px;
-}
 .card {
     margin-left: auto;
     margin-right: auto;
@@ -124,7 +118,41 @@ p {
 }
 
 /* about css */
-
 #about {
   padding-top: 40px;
 }
+
+/* menu css*/
+.btn-menu {
+  border-color: #000;
+  color: #000;
+  font-weight: bold; 
+}
+.btn-menu:hover {
+  opacity: 5.0;
+}
+.dropdown-item:hover {
+background-color: #cc2f2a;
+color: #fff;
+}
+button:not(.btn) {
+  text-decoration: underline;
+}
+.menu-border {
+  border-top: 2px solid #000;
+  margin-top: 50px;
+  padding: 40px;
+  border-collapse: separate;
+  border-spacing: 20px 40px;
+}
+h6 {
+  font-weight: bolder;
+}
+.title-border {
+  border: 5px double #cc2f2a;
+  margin-right: 170px;
+  margin-left: 170px;
+  margin-bottom: 70px;
+  padding: 20px;
+}
+
