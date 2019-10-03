@@ -1,8 +1,10 @@
 
 body {
-    margin: 20px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff;
     color: #000;
 }
 
@@ -83,16 +85,17 @@ a[role="menuitem active"] {
 
 /*Start your custom css here- you can target elements on each page individually by assigning your own ID*/
 
-/* home, about specific css */
+/* Pages */
 
-  .row {
-    padding: 30px;
+.row {
+    padding: 10px;
     letter-spacing: 1px;
-}
+} 
 
-.container {
-    padding: 50px;
-    background-color: #fef854;
+.container-fluid {
+  padding: 30px; 
+  background-color: #fef854;  
+  background-image: linear-gradient(#fef854, white, #fef854); 
 }
 
 h2, p {
@@ -109,18 +112,18 @@ p {
     justify-content: center;
 }
 
-.card {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f0f0f0;
-}
-
 /* about css */
-#about {
-  padding-top: 40px;
+#ourStory {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* menu css*/
+.container-menus .container-menus1 {
+  padding: 30px; 
+  background-color: #fef854;  
+  background-image: linear-gradient(#fef854, white, #fef854, white, #fef854 )
+}
 .btn-menu {
   border-color: #000;
   color: #000;
@@ -154,3 +157,14 @@ h6 {
   padding: 20px;
 }
 
+.footer-menu {
+  display: inline;
+  color: #000;
+}
+.list-index {
+  overflow: auto;
+}
+
+a {
+  color: #000;
+}
