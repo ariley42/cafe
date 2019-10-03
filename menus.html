@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- animation style sheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Our style sheet -->
     <link rel="stylesheet" href="src/css/styles.css">
 
@@ -17,53 +15,77 @@
 </head>
 
 <body>
-
-    <!-- navbar -->
     <nav aria-label="Mythical University">
-        <ul id="menubar1" role="menubar" aria-label="Mythical University">
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="about.html" tabindex="0">
-                    About
-                </a>
-            </li>
+  <ul id="menubar1"
+      role="menubar"
+      aria-label="Mythical University">
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="index.html"
+         tabindex="0">
+        Home
+      </a>
+    </li>
+  
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="about.html"
+         tabindex="-1">
+        About
+      </a>
+      
+    </li>
+    
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="menus.html"
+         tabindex="-2">
+        Menus
+      </a>
+      
+    </li>
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="events.html"
+         tabindex="-3">
+        Events
+      </a>
+      
+    </li>
+     <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="contact.html"
+         tabindex="-4">
+        Contact
+      </a>
+      
+    </ul>
+    
+</nav>
 
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="menus.html" tabindex="-1">
-                    Menus
-                </a>
 
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="events.html" tabindex="-2">
-                    Events
-                </a>
-
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="contact.html" tabindex="-3">
-                    Contact
-                </a>
-
-            </li>
-        </ul>
-
-    </nav>
-
-    <script type="text/javascript">
-        var menubar = new Menubar(document.getElementById('menubar1'));
-        menubar.init();
-    </script>
-
-    <!-- Page Content -->
-    <div class="container">
+    <div class="container-fluid">
         <!-- Heading Row -->
         <div class="row my-3 animated fadeIn slower">
-            <!-- /.col-lg-7 -->
+            <!-- /.col-lg-8 -->
             <div class="col-lg-7">
                 <p class="mb-5">Casual Parisian café classics served 8am to 1am daily. Lorem ipsum dolor sit amet,
                     consectetur
                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+
+
                 <div class="dropdown">
                     <button class="btn btn-menu btn-md mb-5 animated pulse" type="button" id="dropdownMenuButton"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Go To
@@ -92,7 +114,6 @@
         <div class="menu-border mb-5">
             <div class="row">
                 <div id="lemenu" class="col mx-auto text-center align-items-center">
-                    <!-- Le Menu -->
                     <div class="title-border">
                         <div class="col-8 mx-auto text-center align-items-center mb-1">
                             <h1 class="mt-0 text-black">
@@ -140,7 +161,6 @@
                             <p class="small">Two eggs broiled with ham and gruyere</p>
                         </div>
                     </div>
-                    <!-- Charcuterie et salades -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Charcuterie et salades</h3>
                         <hr class="accent my-3">
@@ -185,7 +205,6 @@
                                 harissa vinaigrette and sauce blanche</p>
                         </div>
                     </div>
-                    <!-- Nos Plats -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Nos Plats</h3>
                         <hr class="accent my-3">
@@ -260,8 +279,7 @@
                             <p class="lead">Every Tuesday from 11am to 10pm</p>
                         </div>
                         <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
-                                    alt="cafepresse-logo" height="60" width="60"></a>
-                        </div>
+                                    alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
                         <h5 class="col-lg-7 mx-auto col-12 text-center mt-3">Entrée + Plat <em>-or-</em> Plat +
@@ -271,7 +289,6 @@
                             Plat
                             + Dessert &nbsp; $25 </h5>
                     </div>
-                    <!-- les Entrees -->
                     <div class="col-12 mt-2">
                         <h3 class="text-center mt-5">les Entrées</h3>
                         <hr class="accent my-3">
@@ -290,7 +307,6 @@
                         <p class="small">Chef's choice of 3 cheeses from our cheese board, served with country bread
                         </p>
                     </div>
-                    <!-- les Plats -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">les Plats</h3>
                         <hr class="accent my-3">
@@ -311,7 +327,6 @@
                         <p class="small">Gratin of green chard, eggplant and black olives, baked with sauce tomate,
                             parmesan béchamel and thyme bread crumbs</p>
                     </div>
-                    <!-- les Desserts -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">les Desserts</h3>
                         <hr class="accent my-3">
@@ -354,15 +369,13 @@
                             <p class="lead">Available 4pm to 6pm Daily</p>
                         </div>
                         <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
-                                    alt="cafepresse-logo" height="60" width="60"></a>
-                        </div>
+                                    alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
                         <h5 class="col-lg-7 mx-auto col-12 text-center mt-3">All In-House Bottles of Wine Available
                             at
                             Take-Out Prices</h5>
                     </div>
-                    <!-- Menu -->
                     <div>
                         <span class="float-right font-weight-bold">$7</span>
                         <h6 class="text-truncate">Croque apéro</h6>
@@ -412,15 +425,13 @@
                             <p class="lead">11pm to 1am Nightly</p>
                         </div>
                         <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
-                                    alt="cafepresse-logo" height="60" width="60"></a>
-                        </div>
+                                    alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
                         <h5 class="col-lg-7 mx-auto col-12 text-center mt-3">Great Prices on Beer, Cocktails and
                             Wine
                         </h5>
                     </div>
-                    <!-- Casse Croute -->
                     <div class="col-12 mt-2">
                         <h3 class="text-center">Le Casse Croûte Charcuterie</h3>
                         <hr class="accent my-3">
@@ -458,7 +469,6 @@
                             <p class="small">Two eggs broiled with ham and gruyere</p>
                         </div>
                     </div>
-                    <!-- Sandwiches, soupes, et salades -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Les sandwiches, soupes, et salades</h3>
                         <hr class="accent my-3">
@@ -499,7 +509,6 @@
                                 salad, olive oil</p>
                         </div>
                     </div>
-                    <!-- Nightly Specials -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Les Spécialités d'oiseaux de nuit</h3>
                         <hr class="accent my-3">
@@ -509,8 +518,7 @@
                             <span class="float-right font-weight-bold">$21</span>
                             <h6>Steak-frites, sauté de scarole, beurre au pêches rôties</h6>
                             <p class="small">
-                                100% grass fed petit top sirloin steak, lemon sautéed escarole, bone
-                                marrow-roasted
+                                100% grass fed petit top sirloin steak, lemon sautéed escarole, bone marrow-roasted
                                 peach
                                 butter, pommes frites</p>
                         </div>
@@ -518,8 +526,7 @@
                             <span class="float-right font-weight-bold">$19</span>
                             <h6>Gratin provençal aux blettes, aubergines et olives noires <em>VG</em></h6>
                             <p class="small">
-                                Gratin of green chard, eggplant and black olives, baked with sauce tomate,
-                                parmesan
+                                Gratin of green chard, eggplant and black olives, baked with sauce tomate, parmesan
                                 béchamel and
                                 thyme bread crumbs</p>
                         </div>
@@ -529,8 +536,7 @@
                             <p class="small">
                                 Roasted NW grown free-range half chicken served cold with mayonnaise; salad of
                                 Treviso,
-                                Belgian endive, figs, walnuts, cow's milk, bleu cheese and house made fig
-                                vinegar
+                                Belgian endive, figs, walnuts, cow's milk, bleu cheese and house made fig vinegar
                             </p>
                         </div>
                         <div>
@@ -557,10 +563,8 @@
                             <p class="lead">All our desserts are made in-house</p>
                         </div>
                         <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
-                                    alt="cafepresse-logo" height="60" width="60"></a>
-                        </div>
+                                    alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
-                    <!-- Desserts -->
                     <div class="col-12 mt-2">
                         <h3 class="text-center mt-5">Desserts</h3>
                         <hr class="accent my-3">
@@ -568,28 +572,23 @@
                     <div>
                         <span class="float-right font-weight-bold">$8</span>
                         <h6 class="text-truncate">Pot de créme à la saveur de maïs <em>GF</em></h6>
-                        <p class="small">Rich creamy sweet corn pudding, served with Bing cherry compote and
-                            whipped
+                        <p class="small">Rich creamy sweet corn pudding, served with Bing cherry compote and whipped
                             cream/p>
                     </div>
                     <div>
                         <span class="float-right font-weight-bold">$8</span>
                         <h6 class="text-truncate">Tarte au citron vert, framoises de notre région</h6>
-                        <p class="small">Lime curd baked in a sweet pastry crust, with raspberries and
-                            whipped
-                            cream
+                        <p class="small">Lime curd baked in a sweet pastry crust, with raspberries and whipped cream
                         </p>
                     </div>
                     <div>
                         <span class="float-right font-weight-bold">$8</span>
                         <h6 class="text-truncate">Profiteroles et sa glace aux noisettes</h6>
-                        <p class="small">Crispy pastry puffs filled with hazelnut ice cream, with warm
-                            chocolate
+                        <p class="small">Crispy pastry puffs filled with hazelnut ice cream, with warm chocolate
                             sauce
                             and candied hazelnuts
                         </p>
                     </div>
-                    <!-- Frozen Desserts -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Frozen Desserts</h3>
                         <hr class="accent my-3">
@@ -597,31 +596,25 @@
                     <div>
                         <span class="float-right font-weight-bold">$9</span>
                         <h6 class="text-truncate">La Dame Blanche</h6>
-                        <p class="small">Traditional French ice cream sundae with vanilla bean ice cream,
-                            chocolate
+                        <p class="small">Traditional French ice cream sundae with vanilla bean ice cream, chocolate
                             sauce, broken choclate cookies and whipped cream
                         </p>
                     </div>
                     <div>
                         <span class="float-right font-weight-bold">$9</span>
                         <h6 class="text-truncate">Croupe de'été au basilic</h6>
-                        <p class="small">Our seasonal sundae basil ice cream, peach compote and crisp
-                            cinnamon
-                            bread
+                        <p class="small">Our seasonal sundae basil ice cream, peach compote and crisp cinnamon bread
                             croutons</p>
                     </div>
                     <div>
                         <span class="float-right font-weight-bold">$7</span>
                         <h6 class="text-truncate">Galce ou sorbet à la boule</h6>
-                        <p class="small">Two scoops, served with a cookie. Your choice of vanilla, basil or
-                            hazelnut
+                        <p class="small">Two scoops, served with a cookie. Your choice of vanilla, basil or hazelnut
                             ice
-                            cream or today's seasonal sorbet or ice cream. Ask your server for today's
-                            seasonal
+                            cream or today's seasonal sorbet or ice cream. Ask your server for today's seasonal
                             flavors.
                         </p>
                     </div>
-                    <!-- Candies & Cookies -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Candies and Cookies</h3>
                         <hr class="accent my-3">
@@ -629,8 +622,7 @@
                     <div>
                         <span class="float-right font-weight-bold">$.80/per piece</span>
                         <h6>Caramels au beurre <em>GF</em></h6>
-                        <p class="small">House made butter caramels, individually wrapped <em>also available
-                                in
+                        <p class="small">House made butter caramels, individually wrapped <em>also available in
                                 10-pece
                                 gift bags to take home for $8</em></p>
                     </div>
@@ -646,13 +638,10 @@
                     <div>
                         <span class="float-right font-weight-bold">$14/$5</span>
                         <h6 class="text-truncate">Assiette de fromages <em>VG</em></h6>
-                        <p class="small">Chef's selection of 5 cheeses from our cheese board, or by the
-                            ounce;
-                            with
+                        <p class="small">Chef's selection of 5 cheeses from our cheese board, or by the ounce; with
                             country bread
                         </p>
                     </div>
-                    <!-- Dessert Wine -->
                     <div class="col-12 mt-5">
                         <h3 class="text-center">Vins Desserts</h3>
                         <hr class="accent my-3">
@@ -679,8 +668,7 @@
                     </div>
                     <div>
                         <span class="float-right font-weight-bold">$13</span>
-                        <h6 class="text-truncate">Château D'Arlay Macvin du Jura &nbsp; &nbsp; Blanc &nbsp;
-                            -or-
+                        <h6 class="text-truncate">Château D'Arlay Macvin du Jura &nbsp; &nbsp; Blanc &nbsp; -or-
                             &nbsp;
                             Rouge
                         </h6>
@@ -700,23 +688,17 @@
                             <p class="lead">Available for Take-Out</p>
                         </div>
                         <div><a href="#"><img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo.png"
-                                    alt="cafepresse-logo" height="60" width="60"></a>
-                        </div>
+                                    alt="cafepresse-logo" height="60" width="60"></a></div>
                     </div>
                     <div>
-                        <h6 class="col-lg-10 mx-auto col-12 text-center mt-3">The hot-from-the-oven
-                            chicken,
-                            roasted
+                        <h6 class="col-lg-10 mx-auto col-12 text-center mt-3">The hot-from-the-oven chicken, roasted
                             just
-                            for you, <em>will be ready to Take-Out one hour after you place your order
-                                between 8am
+                            for you, <em>will be ready to Take-Out one hour after you place your order between 8am
                                 and
                                 11pm</em></h6>
                     </div>
                     <div>
-                        <h6 class="col-lg-10 mx-auto col-12 text-center my-4">Our cold half chicken is
-                            ready
-                            when
+                        <h6 class="col-lg-10 mx-auto col-12 text-center my-4">Our cold half chicken is ready when
                             you
                             call. Items from our full menu are also available To-Go.</h6>
                         <hr class="accent my-3">
@@ -725,11 +707,8 @@
                         <span class="float-right font-weight-bold">$18</span>
                         <h6>Demi-poulet froid mayonnaise</h6>
                         <p class="small">
-                            Roasted NW grown free-range half chicken served cold with mayonnaise; salad
-                            of
-                            Treviso,
-                            Belgian endive, figs, walnuts, cow's milk, bleu cheese and house made fig
-                            vinegar</p>
+                            Roasted NW grown free-range half chicken served cold with mayonnaise; salad of Treviso,
+                            Belgian endive, figs, walnuts, cow's milk, bleu cheese and house made fig vinegar</p>
                     </div>
                     <div>
                         <span class="float-right font-weight-bold">$36/2 pers.</span>
@@ -753,61 +732,56 @@
             </div>
         </div>
     </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
 <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-4 offset-1 col-sm-2">
-                <ul class="list-unstyled">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="menus.html">Menus</a></li>
-                    <li><a href="events.html">Events</a></li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="menus.html">Menus</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        1117 12th Ave<br>
+                        Seattle, WA 98122<br>
+                        Tel.: +12067097674<br>
+                        Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="http://google.com/+">Google+</a>
+                        <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
+                        <a href="http://www.linkedin.com/in/">LinkedIn</a>
+                        <a href="http://twitter.com/">Twitter</a>
+                        <a href="http://youtube.com/">YouTube</a>
+                        <a href="mailto:">Mail</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-7 col-sm-5">
-                <h5>Our Address</h5>
-                <address>
-                    1117 12th Ave<br>
-                    Seattle, WA 98122<br>
-                    Tel.: +12067097674<br>
-                    Email: <a href="mailto:info@cafepresse.com">info@cafepresse.com</a>
-                </address>
-            </div>
-            <div class="col-12 col-sm-4 align-self-center">
-                <div class="text-center">
-                    <a href="https://www.facebook.com/Caf%C3%A9-Presse-116501908374109/">Facebook
-                        &nbsp;</a>
-                    <a href="https://twitter.com/cafepressewa?lang=en">Twitter &nbsp;</a>
-                    <a href="mailto:">Mail &nbsp;</a>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2019 Hannah + Arianna</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-auto">
-            <p>© Copyright 2019 Hannah + Arianna</p>
-        </div>
-    </div>
-</footer>
-</script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous">
-    </script>
-<!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-</body>
+    </footer>
 
 </html>
