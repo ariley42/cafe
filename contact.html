@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- animation style sheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Our style sheet -->
     <link rel="stylesheet" href="src/css/styles.css">
 
@@ -17,108 +15,172 @@
 </head>
 
 <body>
-    <nav aria-label="Mythical University">
-        <ul id="menubar1" role="menubar" aria-label="Mythical University">
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="about.html" tabindex="0">
-                    About
-                </a>
-            </li>
+          <nav aria-label="Mythical University">
+  <ul id="menubar1"
+      role="menubar"
+      aria-label="Mythical University">
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="index.html"
+         tabindex="0">
+        Home
+      </a>
+    </li>
+  
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="about.html"
+         tabindex="-1">
+        About
+      </a>
+      
+    </li>
+    
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="menus.html"
+         tabindex="-2">
+        Menus
+      </a>
+      
+    </li>
+    <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="events.html"
+         tabindex="-3">
+        Events
+      </a>
+      
+    </li>
+     <li role="none">
+      <a role="menuitem"
+         aria-haspopup="true"
+         aria-expanded="false"
+         href="contact.html"
+         tabindex="-4">
+        Contact
+      </a>
+      
+    </ul>
+    
+</nav>
 
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="menus.html" tabindex="-1">
-                    Menus
-                </a>
-
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="events.html" tabindex="-2">
-                    Events
-                </a>
-
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="contact.html" tabindex="-3">
-                    Contact
-                </a>
-
-            </li>
-        </ul>
-
-    </nav>
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-md-8">
-                <h2>Welcome to Cafe Presse Contact Page</h2>
+                <h2>Contact Page</h2>
             </div>
         </div>
+    </div>
+<div class="row">
+     <div class="col-md-4 col-lg-5">
+                <p>We welcome all questions, comments and media inquiries. Please fill out the form below and we will look over your message. </p>
+                <button class="btn btn-success" data-toggle="modal" data-target="#employment">Questions on Employment?</button>
+                
+                </div>
+
+                     <div class="col-lg-7">
+                <img class="img-fluid rounded mb-4 mb-lg-0" src="imgs/Cafe-Presse-logo-2-transparent.png" alt="">
+            </div>
+           
+
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <option value=""></option>
+                        <option value="Request quotation">Question or comment</option>
+                        <option value="Request order status">Media Inquiry</option>
+                        <option value="Request copy of an invoice">Employment information</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+       
     </div>
 
-    <div class="aboutus-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="aboutus">
-                        <h2 class="aboutus-title">About Us</h2>
-                        <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-                            consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                        <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
-                            velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
-                            consequat ipsum, nec sagittis sem</p>
-                        <a class="aboutus-more" href="#">read more</a>
+</form>
+                </div>
+                <div class="row">
+        <div class="modal" tabindex="-1" role="dialog" aria-hidden="true" id="employment">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Employment info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times</button>
+                        </div>
+                        <div class="modal-body">
+                        <p>
+                            Please email us your resume by filling out the form above, and specifying employment as the reason. Typical responsibilities include serving drinks, handling money and handling hot foods. We are looking for skilled multitaskers who are passionate about good coffee and wine, if you think you have what it takes, send us your info.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="aboutus-banner">
-                        <img src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg" alt="">
-                    </div>
                 </div>
-                <div class="col-md-5 col-sm-6 col-xs-12">
-                    <div class="feature">
-                        <div class="feature-box">
-                            <div class="clearfix">
-                                <div class="iconset">
-                                    <span class="glyphicon glyphicon-cog icon"></span>
-                                </div>
-                                <div class="feature-content">
-                                    <h4>Work with heart</h4>
-                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                                        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <div class="clearfix">
-                                <div class="iconset">
-                                    <span class="glyphicon glyphicon-cog icon"></span>
-                                </div>
-                                <div class="feature-content">
-                                    <h4>Reliable services</h4>
-                                    <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam sit
-                                        amet orci eget eros faucibus tincidunt</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <div class="clearfix">
-                                <div class="iconset">
-                                    <span class="glyphicon glyphicon-cog icon"></span>
-                                </div>
-                                <div class="feature-content">
-                                    <h4>Great support</h4>
-                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat
-                                        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                </div>
+
             </div>
-        </div>
-    </div>
-    <footer class="footer">
+            
+             <footer class="footer">
         <div class="container">
+<<<<<<< HEAD
             <div class="row justify-content-md-center pt-5">
                 <div class="col-auto">
                     <div class="text-center">
@@ -134,10 +196,39 @@
                         <a href="mailto:"><img class="image-fluid" src="imgs/email-sketch-4.png" height="35" width="35"
                                 alt="">
                             &nbsp;</a>
+=======
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="menus.html">Menus</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="contact.html">Employment</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        1117 12th Ave<br>
+                        Seattle, WA 98122<br>
+                        Tel.: +12067097674<br>
+                        Email: <a href="mailto:info@cafepresse.com">info@cafepresse.com</a>
+                    </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a href="https://www.facebook.com/Caf%C3%A9-Presse-116501908374109/">Facebook &nbsp;</a>
+                        <a href="https://twitter.com/cafepressewa?lang=en">Twitter &nbsp;</a>
+                        <a href="mailto:">Mail &nbsp;</a>
+>>>>>>> 123faa6e9254e3848f74d849e0108400373f0731
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
+<<<<<<< HEAD
                 <div class="col-6">
                     <p>© Copyright 2019 Hannah + Arianna</p>
                 </div>
@@ -150,10 +241,14 @@
                         <li class="footer-menu"><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
+=======
+                <div class="col-auto">
+                    <p>© Copyright 2019 Hannah + Arianna</p>
+                </div>
+>>>>>>> 123faa6e9254e3848f74d849e0108400373f0731
             </div>
-        </div>
     </footer>
-    <script src="dist/main.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
