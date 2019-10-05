@@ -14,45 +14,53 @@
 </head>
 
 <body>
-    <nav aria-label="Mythical University">
-        <ul id="menubar1" role="menubar" aria-label="Mythical University">
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="index.html" tabindex="0">
-                    Home
-                </a>
-            </li>
 
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="about.html" tabindex="-1">
-                    About
-                </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" aria-label="Menubar">
+        <div class="container-fluid">
+            <a class='navbar-brand' href="index.html">Cafe Presse</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
 
-            </li>
 
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="menus.html" tabindex="-2">
-                    Menus
-                </a>
+                <ul class="navbar-nav" id="menubar1" role="menubar" class="nav navbar-nav"
+                    aria-label="Mythical University">
+                    <li class="nav-item active">
+                        <a role="menuitem" class="nav-link" href="index.html" tabindex="0">
+                            Home
+                        </a>
+                    </li>
 
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="events.html" tabindex="-3">
-                    Events
-                </a>
+                    <li class="nav-item">
+                        <a role="menuitem" class="nav-link" href="about.html" tabindex="-1">
+                            About
+                        </a>
 
-            </li>
-            <li role="none">
-                <a role="menuitem" aria-haspopup="true" aria-expanded="false" href="contact.html" tabindex="-4">
-                    Contact
-                </a>
-        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a role="menuitem" class="nav-link" href="menus.html" tabindex="-2">
+                            Menus
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a role="menuitem" class="nav-link" href="events.html" tabindex="-3">
+                            Events
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a role="menuitem" class="nav-link" href="contact.html" tabindex="-4">
+                            Contact
+                        </a>
+
+                </ul>
+            </div>
+        </div>
     </nav>
-
-    <script type="text/javascript">
-        var menubar = new Menubar(document.getElementById('menubar1'));
-        menubar.init();
-    </script>
-
     <!-- Page Content -->
     <section class="bgimage">
         <div class='container-fluid'>
@@ -64,8 +72,35 @@
                     <img class="img-fluid rounded mb-4 pb-5 mb-lg-0" src="imgs/Cafe-Presse-logo-2-transparent.png"
                         alt="cafepresse-logo-2">
                 </div>
-            </div>
-        </div>
+
+
+
+                <!-- Heading Row -->
+                <div class='container'>
+                    <div class="row align-items-center my-5">
+                        <div class="col-lg-7">
+                            <img class="img-fluid rounded mb-4 mb-lg-0" src="./imgs/bar-image.png"
+                                alt="front-of-restaurant">
+                        </div>
+                        <!-- /.col-lg-8 -->
+                        <div class="col-lg-5">
+                            <h1 class="font-weight-light header">Our Story</h1>
+                            <p class='feature-content p'><br>Café Presse and Le Pichet owners Jim Drohman and Joanne
+                                Herron have
+                                both
+                                long been fascinated by the food, wine and lifestyle of France. Jim and Joanne opened Le
+                                Pichet in
+                                2000, emulating a personal, neighborhood feel. <br><br>
+                                With Café Presse, Jim and Joanne hope to build type of Parisian institution, a Bar/Café.
+                                Café Presse is your alternative
+                                living room. <br><br> One can enjoy coffee and croissants in the morning, meet friends
+                                for lunch,
+                                dinner or
+                                drinks
+                                throughout the day or to have a late night bite or a night cap until 2am.
+                            </p>
+                        </div>
+                    </div>
     </section>
 
     <div class="wrapper">

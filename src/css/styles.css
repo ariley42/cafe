@@ -25,8 +25,8 @@ ul[role="menubar"] {
 ul[role="menubar"] [role="menuitem"],
 ul[role="menubar"] [role="separator"] {
   padding: 0.25em;
-  background-color: #white;
-  border: 2px solid #white;
+  background-color: #eee;
+  border: 2px solid #eee;
 }
 
 ul[role="menubar"] [role="separator"] {
@@ -40,7 +40,7 @@ ul[role="menubar"] [role="menuitem"]:hover,
 ul[role="menubar"] [role="separator"]:focus,
 ul[role="menubar"] [role="separator"]:hover {
   background-color: black;
-  color: white;
+  color: eee;
 }
 
 ul[role="menubar"] a[role="menuitem"] {
