@@ -9,25 +9,25 @@
     <!-- Our style sheet -->
     <link rel="stylesheet" href="src/css/styles.css">
 
-
-    <title>Cafe Presse</title>
+    <title> Cafe Presse </title>
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" aria-label="Menubar">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm fixed-top" aria-label="Menubar">
         <div class="container-fluid">
-            <a class='navbar-brand' href="index.html">Cafe Presse</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class='navbar-brand' href="index.html"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="dark-blue-text"><i class="navbar-toggler-icon"></i></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 
 
                 <ul class="navbar-nav" id="menubar1" role="menubar" class="nav navbar-nav"
                     aria-label="Mythical University">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a role="menuitem" class="nav-link" href="index.html" tabindex="0">
                             Home
                         </a>
@@ -40,7 +40,7 @@
 
                     </li>
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a role="menuitem" class="nav-link" href="menus.html" tabindex="-2">
                             Menus
                         </a>
@@ -56,29 +56,28 @@
                         <a role="menuitem" class="nav-link" href="contact.html" tabindex="-4">
                             Contact
                         </a>
-
+                    </li>
                 </ul>
             </div>
         </div>
-        </div>
-        </div>
-
     </nav>
 
-    <!-- Page Content -->
+    <!-- Menus Section -->
+
+    <!-- hero -->
     <section class="bgimage">
         <div class="container-fluid">
             <!-- Heading Row -->
-            <div class="row align-items-center pt-5 animated fadeIn slow">
+            <div class="row align-items-center pt-5 animated fadeIn slow menu-hero">
                 <div class="col-lg-7">
-                    <h1 class="font-weight-light hero">Food for Every Occasion<br><br></h1>
-                    <p>Casual Parisian café classics served 8am to 1am daily. Lorem ipsum dolor sit amet,
-                        consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                        <br></p>
+                    <h2>Food for Every Occasion</h2>
+                    <p>Casual Parisian café classics served 8am to 1am daily. We have full bar in the front, where you
+                        can
+                        take-out food and wine, and get our famous roasted chicken to go. <br> <br>
 
-                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        The second collaboration of Le Pichet owners Joanne Herron and Jim Drohman offers full coffee
+                        service featuring Caffe Vita coffee and house-made pastries and affordable wines from the French
+                        countryside.<br><br></p>
 
                     <div class="dropdown">
                         <button class="btn btn-menu btn-md animated pulse" type="button" id="dropdownMenuButton"
@@ -102,13 +101,11 @@
                         height="300" width="400" alt="cafepresse-logo-2">
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Content -->
-    <!-- Le Casse Croute -->
-    <section class="bgimage-parallax">
-        <div class="container-fluid">
+
+            <!-- Content -->
+            <!-- Le Casse Croute -->
+
             <div class="menu-border mb-5">
                 <div class="row">
                     <div id="lemenu" class="col mx-auto text-center align-items-center">
@@ -265,12 +262,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Mardi Prix Fixe -->
-    <section id="mardiprixfixe" data-type="background" data-speed="10">
-        <div class="container-fluid">
+            <!-- Mardi Prix Fixe -->
             <div class="menu-border mb-5">
                 <div class="row">
                     <div id="mardiprixfixe" class="col mx-auto text-center align-items-center">
@@ -359,12 +352,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Vin Express -->
-    <section id="vinexpress" data-type="background" data-speed="10">
-        <div class="container-fluid">
+            <!-- Vin Express -->
             <div class="menu-border mb-5">
                 <div class="row">
                     <div id="vinexpress" class="col mx-auto text-center align-items-center">
@@ -419,12 +408,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Late Night Menu -->
-    <section id="latenight" data-type="background" data-speed="10">
-        <div class="container-fluid">
+            <!-- Late Night Menu -->
             <div class="menu-border mb-5">
                 <div class="row">
                     <div id="latenight" class="col mx-auto text-center align-items-center">
@@ -561,12 +546,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Desserts -->
-    <section id="desserts" data-type="background" data-speed="10">
-        <div class="container-fluid">
+            <!-- Desserts -->
+
             <div class="menu-border mb-5">
                 <div class="row">
                     <div id="desserts" class="col mx-auto text-center align-items-center">
@@ -690,12 +672,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Poulet a Go Go -->
-    <section id="pouletagogo" data-type="background" data-speed="10">
-        <div class="container-fluid">
+
+            <!-- Poulet a Go Go -->
             <div class="menu-border mb-5">
                 <div class="row">
                     <div id="pouletagogo" class="col mx-auto text-center align-items-center">
@@ -753,36 +732,36 @@
     </section>
 
     <!-- footer -->
-    <section id="footer" data-type="background" data-speed="10">
-        <footer class="footer">
-            <div class="container">
-                <div class="row justify-content-md-center pt-5">
-                    <div class="col-auto">
-                        <div class="text-center">
-                            <a href="https://www.facebook.com/Caf%C3%A9-Presse-116501908374109/"><img
-                                    class="image-fluid" src="imgs/png/Facebook.png" height="25" width="35" alt="">
-                                &nbsp;</a>
-                            <a href="https://twitter.com/cafepressewa?lang=en"><img class="image-fluid"
-                                    src="imgs/png/Twitter.png" height="25" width="35" alt="">
-                                &nbsp;</a>
-                            <a href="https://www.instagram.com/cafepresseseattle/"><img class="image-fluid"
-                                    src="imgs/png/Instagram.png" height="25" width="35" alt="">
-                                &nbsp;</a>
-                            <a href="mailto:"><img class="image-fluid" src="imgs/png/Email.png" height="25" width="35"
-                                    alt="">
-                                &nbsp;</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <p>© Copyright 2019 Hannah + Arianna</p>
+    <footer class="footer">
+        <div class='container'>
+            <div class="row justify-content-md-center pt-5">
+                <div class="col-auto">
+                    <div class="text-center">
+                        <a href="https://www.facebook.com/Caf%C3%A9-Presse-116501908374109/"><img class="image-fluid"
+                                src="imgs/png/Facebook.png" height="25" width="35" alt="">
+                            &nbsp;</a>
+                        <a href="https://twitter.com/cafepressewa?lang=en"><img class="image-fluid"
+                                src="imgs/png/Twitter.png" height="25" width="35" alt="">
+                            &nbsp;</a>
+                        <a href="https://www.instagram.com/cafepresseseattle/"><img class="image-fluid"
+                                src="imgs/png/Instagram.png" height="25" width="35" alt="">
+                            &nbsp;</a>
+                        <a href="mailto:"><img class="image-fluid" src="imgs/png/Email.png" height="25" width="35"
+                                alt="">
+                            &nbsp;</a>
                     </div>
                 </div>
             </div>
-        </footer>
-    </section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© Copyright 2019 Hannah + Arianna</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script src="src/index.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

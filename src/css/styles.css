@@ -1,17 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
-
-body {
-    /* margin-right: 70px;
-    margin-left: 70px;  */
-    margin-top: 40px;
-    font-family: 'Montserrat', sans-serif;
-    color: #000;
-    background-color: white; 
-}
-
 /*This css cannot be modified. anything related to the navbar cannot be modified at risk of breaking navbar.*/
 
 ul[role="menubar"] {
@@ -19,14 +5,14 @@ ul[role="menubar"] {
   padding: 10px;
   font-size: 110%;
   list-style: none;
-  background-color: white;
+  background-color: #eee;
 }
 
 ul[role="menubar"] [role="menuitem"],
 ul[role="menubar"] [role="separator"] {
   padding: 0.25em;
-  background-color: white;
-  border: 2px solid white;
+  background-color: #eee;
+  border: 2px solid #eee;
 }
 
 ul[role="menubar"] [role="separator"] {
@@ -80,10 +66,42 @@ ul[role="menubar"] ul[role="menu"] li a {
 ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
   padding-right: 2em;
 }
-
 /*Start your custom css here- you can target elements on each page individually by assigning your own ID*/
 
-/* Pages */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    /* margin-right: 70px;
+    margin-left: 70px;  */
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    background-color: #eee; 
+}
+
+.menu-hero {
+  margin-top: 95px;
+}
+
+  .navbar-toggler.toggler-example {
+  cursor: pointer;
+  }
+  .dark-blue-text {
+  color: #0A38F5;
+  }
+  .dark-pink-text {
+  color: #AC003A;
+  }
+  .dark-amber-text {
+  color: #ff6f00;
+  }
+  .dark-teal-text {
+  color: #004d40;
+  }
+  .navbar .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+  }
 
 .row {
     padding: 10px;
@@ -92,7 +110,7 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
 
 .container-fluid {
   padding: 30;
-  margin-top: 30;
+  margin-top: 50;
 }
 
 .bgimage {
@@ -105,29 +123,9 @@ ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
   background-attachment: fixed;
 }
 
-.bgimage-parallax {
-  width:100%;
-  height:1000px;
-  background: url(../../imgs/mona-eendra-vC8wj_Kphak-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  background-attachment: fixed;
-}
-
-.bgimage-aboutus {
-  width:100%;
-  min-height:1000px;
-  background: white;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  background-attachment: fixed;
-}
-
 h2 {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex: 0 1 100%;
   grid-column: 1 / -1;
   letter-spacing: 2px;
@@ -240,6 +238,10 @@ padding: 30px;
 }
 .btn-menu:hover {
   opacity: 5.0;
+}
+
+.dropdown-menu {
+  align-items: center;
 }
 .dropdown-item:hover {
 background-color: #cc2f2a;
