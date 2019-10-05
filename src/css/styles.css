@@ -1,11 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
-    margin-right: 70px;
-    margin-left: 70px;
+    /* margin-right: 70px;
+    margin-left: 70px;  */
     margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
     color: #000;
+    background-color: white; 
 }
 
 /*This css cannot be modified. anything related to the navbar cannot be modified at risk of breaking navbar.*/
@@ -15,14 +19,14 @@ ul[role="menubar"] {
   padding: 10px;
   font-size: 110%;
   list-style: none;
-  background-color: #eee;
+  background-color: #white;
 }
 
 ul[role="menubar"] [role="menuitem"],
 ul[role="menubar"] [role="separator"] {
   padding: 0.25em;
-  background-color: #eee;
-  border: 2px solid #eee;
+  background-color: #white;
+  border: 2px solid #white;
 }
 
 ul[role="menubar"] [role="separator"] {
@@ -93,37 +97,148 @@ a[role="menuitem active"] {
 } 
 
 .container-fluid {
-  padding: 30px; 
-  background-color: #fef854;  
-  background-image: linear-gradient(#fef854, white, #fef854); 
+  padding: 30;
+  margin-top: 30;
 }
 
-h2, p {
+.bgimage {
+  width:100%;
+  min-height:500px;
+  background: url(../../imgs/mona-eendra-vC8wj_Kphak-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.bgimage-parallax {
+  width:100%;
+  height:1000px;
+  background: url(../../imgs/mona-eendra-vC8wj_Kphak-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+.bgimage-aboutus {
+  width:100%;
+  min-height:1000px;
+  background: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 100%;
+  grid-column: 1 / -1;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 3em;
+  text-align: center;
+}
+
+p {
     display: flex;
     justify-content: center;
     flex: 0 1 100%;
     grid-column: 1 / -1;
     letter-spacing: 1px;
+    margin: 0 0 1em 0;
   }
 
-p {
-    display: flex;
-    margin: 0 0 1em 0;
-    justify-content: center;
+  .hero {
+    font-size: 2em;
+    text-align: center;
+  }
+
+/* about us section */
+#about {
+padding: 30px;
 }
 
-/* about css */
 #ourStory {
   display: flex;
   justify-content: space-evenly;
 }
 
-/* menu css*/
-.container-menus .container-menus1 {
-  padding: 30px; 
-  background-color: #fef854;  
-  background-image: linear-gradient(#fef854, white, #fef854, white, #fef854 )
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* home page */
+
+#home-cta {
+  justify-content: center;
+}
+
+/* menus page */
+
+/* #home {
+  background: url(../../imgs/eiffel-tower.png) 50% 0 no-repeat min-height: 1000px;
+}
+
+#lemenu {
+  background: url(../../imgs/luis-guerrero-2EeKIdJ8e10-unsplash.jpg) 50% 0 no-repeat min-height: 1000px;
+}
+
+#mardiprixfixe {
+  background: url(../../imgs/HERO_jason-dent-unsplash.png) 50% 0 no-repeat min-height: 1000px;
+} */
+
 .btn-menu {
   border-color: #000;
   color: #000;
@@ -140,11 +255,13 @@ button:not(.btn) {
   text-decoration: underline;
 }
 .menu-border {
-  border-top: 2px solid #000;
+  display: fixed;
+  /* border-top: 2px solid #000; */
   margin-top: 50px;
   padding: 40px;
   border-collapse: separate;
   border-spacing: 20px 40px;
+
 }
 h6 {
   font-weight: bolder;
@@ -157,9 +274,25 @@ h6 {
   padding: 20px;
 }
 
+@media screen and (max-width: 800px) {
+  .title-border {
+    border: 0px;
+    display: inline;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: lightslategray;
+}
+
 .footer-menu {
   display: inline;
   color: #000;
+}
+
+button:not(.btn) {
+  text-decoration: underline;
 }
 .list-index {
   overflow: auto;
