@@ -7,26 +7,33 @@
     </head>
     
     <title> <%= htmlWebpackPlugin.options.title %> </title>
-    <!--<link rel="stylesheet" type="text/css" href="css/styles.css">-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <body>
-    <nav aria-label="Mythical University">
-  <ul id="menubar1"
-      role="menubar"
-      aria-label="Mythical University">
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
-         href="index.html"
-         tabindex="0">
-        Home
-      </a>
-    </li>
+        <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" aria-label="Menubar">
+    <div class="container-fluid">
+    <a class='navbar-brand' href="index.html">Cafe Presse</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse">
+                
+                 
+        <ul class ="navbar-nav" id="menubar1"
+        role="menubar" class="nav navbar-nav"
+        aria-label="Mythical University">
+            <li class="nav-item active">
+                <a role="menuitem"
+                class="nav-link"
+                href="index.html"
+                tabindex="0">
+                Home
+                </a>
+            </li>
   
-    <li role="none">
-      <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
+            <li class="nav-item">
+        <a role="menuitem"
+        class="nav-link"
          href="about.html"
          tabindex="-1">
         About
@@ -34,38 +41,40 @@
       
     </li>
     
-    <li role="none">
+    <li class="nav-item">
       <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
+      class="nav-link"
          href="menus.html"
          tabindex="-2">
         Menus
       </a>
       
     </li>
-    <li role="none">
+    <li class="nav-item">
       <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
+      class="nav-link"
          href="events.html"
          tabindex="-3">
         Events
       </a>
       
     </li>
-     <li role="none">
+     <li class="nav-item">
       <a role="menuitem"
-         aria-haspopup="true"
-         aria-expanded="false"
+      class="nav-link"
          href="contact.html"
          tabindex="-4">
         Contact
       </a>
       
     </ul>
+    </div>
+    </div>
+    </div>
+    </div>
     
 </nav>
+</div>
 
 
    <div class="container">
